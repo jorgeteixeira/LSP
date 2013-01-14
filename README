@@ -1,0 +1,42 @@
+LSP version 0.01
+================
+
+LSP stands for 'Léxico Semantico do Portugues'. LSP is a project that is being 
+developed with the main purpose of creating a corpus for the Portuguese 
+language based on other previous developed tools. These tools include hard 
+tested databases with morphological information as the Jspell, as well as 
+community-edit resources as the Wikipedia and the Wiktionary.
+Apart the morphological information gathered from the previous mentioned tools, 
+the LSP has also semantic information from different sources:
+ - Manually inserted semantic information
+ - Semantic information gathered using the Window Rules (see ASP project)
+ - In future, semantic information from the Wikipedia and Wiktionary, both for 
+  the Portuguese language. 
+
+This project has two main features that characterize it:
+ - The portability: A fully independent database (LSPDB) is generated based on 
+ 	the morphological and semantic information. It is stored in a plain-text 
+ 	file to avoid complex access and search procedures.
+ - The performance: Since the database is stored as a plain-text, it can be 
+ 	entirely loaded to the system's memory. The database uses hashs to attain 
+ 	high performance in search operations. 
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make install
+
+COPYRIGHT AND LICENCE
+
+Put the correct copyright and licence information here.
+
+Copyright (C) 2008 by Jorge Teixeira and Luis Sarmento
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.8.8 or,
+at your option, any later version of Perl 5 you may have available.
+
+
